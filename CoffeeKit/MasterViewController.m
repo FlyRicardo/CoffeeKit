@@ -18,6 +18,8 @@
 #import "VenueCell.h"
 #import "Stats.h"
 
+#import "WSAFNetworking.h"
+
 @interface MasterViewController ()
 
 @property (nonatomic, strong) NSArray *venues;
@@ -34,8 +36,13 @@
     
     [super viewDidLoad];
     
-    [self configureRestKit];
-    [self loadVenues];
+    //Testing the WSAFNetworking connection
+    WSAFNetworking *wsAFNetworking = [[WSAFNetworking alloc]init];
+    [wsAFNetworking getTopListWithLimit:50];
+    
+    
+//    [self configureRestKit];
+//    [self loadVenues];
     // Do any additional setup after loading the view, typically from a nib.
 //    self.navigationItem.leftBarButtonItem = self.editButtonItem;
 //
@@ -90,7 +97,7 @@
     return YES;
 }
 
-//-------------------------------CUSTOMIZE METHODS---------------------------------------
+//-------------------------------CUSTOMIZED METHODS---------------------------------------
 - (void)configureRestKit
 {
     // initialize AFNetworking HTTPClient
@@ -126,7 +133,6 @@
     
     [venueMapping addPropertyMapping:[RKRelationshipMapping relationshipMappingFromKeyPath:@"stats" toKeyPath:@"stats" withMapping:statsMapping]];
 }
-
 
 - (void)loadVenues
 {
