@@ -9,29 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CoffeeKit/ws/Product/Concrete/WSAFNetworking.m"
-            timestampString = "467228054.533703"
+            filePath = "CoffeeKit/controllers/TableViewController.m"
+            timestampString = "467268470.175955"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
-            landmarkName = "-getTopListWithLimit:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CoffeeKit/ws/Product/Concrete/WSAFNetworking.m"
-            timestampString = "467228054.533703"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
-            landmarkName = "-getTopListWithLimit:"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "-tableView:numberOfRowsInSection:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,13 +25,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CoffeeKit/ws/Product/Concrete/WSAFNetworking.m"
-            timestampString = "467228054.533703"
+            filePath = "CoffeeKit/controllers/TableViewController.m"
+            timestampString = "467272068.749888"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
-            landmarkName = "-getTopListWithLimit:"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "-receiveRedditTopXNotification:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -57,29 +41,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CoffeeKit/ws/Product/Concrete/WSAFNetworking.m"
-            timestampString = "467216398.876854"
+            filePath = "CoffeeKit/controllers/Cells/LinkCell.m"
+            timestampString = "467272390.36945"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "-getTopListWithLimit:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CoffeeKit/ws/Product/Concrete/WSAFNetworking.m"
-            timestampString = "467216398.876854"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "-getTopListWithLimit:"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "-setCacheImage:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -89,12 +57,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CoffeeKit/ws/Product/Concrete/WSAFNetworking.h"
-            timestampString = "467225704.383236"
+            filePath = "CoffeeKit/controllers/Cells/LinkCell.m"
+            timestampString = "467272623.264979"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18">
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "-setCacheImage:"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -103,43 +73,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CoffeeKit/ws/Factory/Concrete/NSURLSession/WebServicesNSURLSessionFactory.h"
-            timestampString = "467250164.640999"
+            filePath = "CoffeeKit/controllers/Cells/LinkCell.m"
+            timestampString = "467272644.831342"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "@interface WebServicesNSURLSessionFactory"
-            landmarkType = "2">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CoffeeKit/ws/Product/Concrete/NSURLSession/WS_NSURLSessionTopReddit.h"
-            timestampString = "467251145.249495"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "10"
-            endingLineNumber = "10">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CoffeeKit/ws/Product/Concrete/AFNetworking/WS_AFNetworkingTopReddit.m"
-            timestampString = "467251252.327386"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
-            landmarkName = "-getTopListWithLimit:"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "-setCacheImage:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

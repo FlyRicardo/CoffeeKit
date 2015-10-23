@@ -13,11 +13,12 @@
 @interface DataOM : NSObject
 
 @property (nonatomic) NSString* kind;
+@property (nonatomic) NSString* name;
 @property (nonatomic) NSString* author;
 @property (nonatomic) NSString* title;
 @property (nonatomic) NSNumber* numberOfComments;
 @property (nonatomic) NSDate* created;
-@property (nonatomic) NSString* thumbnail;
+@property (nonatomic) NSString* thumbnailUrl;
 @property (nonatomic, strong) NSArray* imageArray;
 
 @end

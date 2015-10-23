@@ -7,8 +7,18 @@
 //
 
 #import "TableViewController.h"
+#import "LinkCell.h"
+
+#import "WebServicesAbstractFactory.h"
+#import "WSTopReddit.h"
+
+#import "Constants.h"
 
 @interface TableViewController ()
+
+@property(nonatomic) NSArray* linkArray;
+
+@property id wsTopReddit;
 
 @end
 
@@ -17,19 +27,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSURLSession *session = [NSURLSession sharedSession];
-    NSURLSessionDataTask *dataTask = [session dataTaskWithURL:[NSURL URLWithString:@"https://itunes.apple.com/search?term=apple&media=software"] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-        
-        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-        NSLog(@"%@", json);
-        
-    }];
+    //Put a waitter sppiner
+    
+    _wsTopReddit = [WebServicesAbstractFactory createWebServiceTopReddit:AFNetworkingType];
+    [_wsTopReddit getTopListWithLimit:50];
     
     // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+     self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+     self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,27 +44,72 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) viewWillAppear:(BOOL)animated{
+    [self registerNotifyProcess];
+}
+
+-(void) viewWillDisappear:(BOOL)animated{
+    [self unregisterNotifyProcess];
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return [_linkArray count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    // Configure the cell...
+    // Configure the cell
+    
+    NSString *identifier = @"LinkCell";
+    
+    LinkCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+    
+    if (cell == nil) {
+        cell = [[LinkCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+    }
+    
+    [cell setLink:[_linkArray objectAtIndex:[indexPath row]] index:(int)[indexPath row]];
+
     
     return cell;
 }
-*/
+
+
+#pragma mark - Notifying Web services proccess
+
+-(void)registerNotifyProcess{
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(receiveRedditTopXNotification:)
+                                                 name:REDDIT_TOP_X_RESPONSE_NOTIFICATION
+                                               object:nil];
+
+}
+
+-(void) unregisterNotifyProcess{
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:REDDIT_TOP_X_RESPONSE_NOTIFICATION
+                                                  object:nil];
+}
+
+-(void)receiveRedditTopXNotification:(NSNotification *) notification{
+    NSDictionary *dictionary = notification.userInfo;
+    if(![dictionary[REDDIT_TOP_X_RESPONSE] isKindOfClass:[NSError class]]){
+        _linkArray = dictionary[REDDIT_TOP_X_RESPONSE];
+        [self.tableView reloadData];
+    }else{
+        //Launch pop up notifying user about error
+    }
+
+}
+
 
 /*
 // Override to support conditional editing of the table view.

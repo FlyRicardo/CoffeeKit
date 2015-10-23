@@ -15,6 +15,8 @@
 #import "ImageOM.h"
 #import "SourceOM.h"
 
+#import "Constants.h"
+
 
 @interface WS_AFNetworkingTopReddit()
 
@@ -67,10 +69,10 @@ static WS_AFNetworkingTopReddit* _instance;
     RKObjectMapping *dataMapping = [RKObjectMapping mappingForClass:[DataOM class]];
     
     [dataMapping addAttributeMappingsFromDictionary:@{
-//                                                      @"kind":@"kind"
+                                                      @"name":@"name",
                                                       @"num_comments": @"numberOfComments",
                                                       @"created":@"created",
-                                                      @"thumbnail":@"thumbnail",
+                                                      @"thumbnail":@"thumbnailUrl",
                                                       @"title":@"title",
                                                       @"author":@"author"
                                                       }];
@@ -125,12 +127,16 @@ static WS_AFNetworkingTopReddit* _instance;
                                                      parameters:queryParams
                                                         success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
                                                             NSLog(@"success block");
+                                                            
+                                                            NSDictionary *userInfo =@{REDDIT_TOP_X_RESPONSE:[mappingResult array]};
+                                                            [[NSNotificationCenter defaultCenter] postNotificationName:REDDIT_TOP_X_RESPONSE_NOTIFICATION object:nil userInfo:userInfo];
+                                                            
                                                         } failure:^(RKObjectRequestOperation *operation, NSError *error) {
                                                             NSLog(@"failure block");
+                                                            
+                                                            NSDictionary *userInfo =@{REDDIT_TOP_X_RESPONSE:error};
+                                                            [[NSNotificationCenter defaultCenter] postNotificationName:REDDIT_TOP_X_RESPONSE_NOTIFICATION object:nil userInfo:userInfo];
                                                         }];
-
-    
-    
 }
 
 @end
