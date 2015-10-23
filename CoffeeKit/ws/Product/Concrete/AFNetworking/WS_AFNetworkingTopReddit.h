@@ -7,10 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "WSTopReddit.h"
 
-@interface WSAFNetworking : NSObject
-
--(void)getTopListWithLimit:(NSInteger) limit;
+@interface WS_AFNetworkingTopReddit : NSObject<WSTopReddit>
 
 +(id)getInstance;
 

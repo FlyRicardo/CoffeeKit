@@ -17,14 +17,16 @@
 		423682D919D9B2AE00DE84EC /* CoffeeKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 423682D819D9B2AE00DE84EC /* CoffeeKitTests.m */; };
 		423682EB19D9F6DF00DE84EC /* VenueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 423682EA19D9F6DF00DE84EC /* VenueCell.m */; };
 		42DF05421BD88EDF00037D8B /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DF05341BD88EDF00037D8B /* TableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		42DF05431BD88EDF00037D8B /* WSConnectionAFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DF053F1BD88EDF00037D8B /* WSConnectionAFNetworking.m */; settings = {ASSET_TAGS = (); }; };
-		42DF05441BD88EDF00037D8B /* WSAFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DF05411BD88EDF00037D8B /* WSAFNetworking.m */; settings = {ASSET_TAGS = (); }; };
-		42DF054C1BD89CC800037D8B /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DF05471BD89CC800037D8B /* Location.m */; settings = {ASSET_TAGS = (); }; };
-		42DF054D1BD89CC800037D8B /* Stats.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DF05491BD89CC800037D8B /* Stats.m */; settings = {ASSET_TAGS = (); }; };
-		42DF054E1BD89CC800037D8B /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DF054B1BD89CC800037D8B /* Venue.m */; settings = {ASSET_TAGS = (); }; };
 		42DF05551BD89D6300037D8B /* DataOM.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DF05541BD89D6300037D8B /* DataOM.m */; settings = {ASSET_TAGS = (); }; };
 		42DF055B1BD89DBA00037D8B /* SourceOM.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DF055A1BD89DBA00037D8B /* SourceOM.m */; settings = {ASSET_TAGS = (); }; };
 		42DF05661BD8A92100037D8B /* ImageOM.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DF05651BD8A92100037D8B /* ImageOM.m */; settings = {ASSET_TAGS = (); }; };
+		42DF056E1BD99BAF00037D8B /* WS_AFNetworkingTopReddit.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DF056C1BD99BAF00037D8B /* WS_AFNetworkingTopReddit.m */; settings = {ASSET_TAGS = (); }; };
+		42DF05711BD99C4300037D8B /* WS_NSURLSessionTopReddit.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DF05701BD99C4300037D8B /* WS_NSURLSessionTopReddit.m */; settings = {ASSET_TAGS = (); }; };
+		42DF05761BD99F8D00037D8B /* WS_AFNetworkingConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DF05751BD99F8D00037D8B /* WS_AFNetworkingConnection.m */; settings = {ASSET_TAGS = (); }; };
+		42DF057A1BD9A06C00037D8B /* WS_NSURLSessionConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DF05791BD9A06C00037D8B /* WS_NSURLSessionConnection.m */; settings = {ASSET_TAGS = (); }; };
+		42DF057E1BD9A7A100037D8B /* WebServicesAbstractFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DF057D1BD9A7A100037D8B /* WebServicesAbstractFactory.m */; settings = {ASSET_TAGS = (); }; };
+		42DF05831BD9A94500037D8B /* WebServicesAFNetworkingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DF05821BD9A94500037D8B /* WebServicesAFNetworkingFactory.m */; settings = {ASSET_TAGS = (); }; };
+		42DF05861BD9A95A00037D8B /* WebServicesNSURLSessionFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DF05851BD9A95A00037D8B /* WebServicesNSURLSessionFactory.m */; settings = {ASSET_TAGS = (); }; };
 		B05ACCFD4F7F4AA891A67D4D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FDE12E64C8480CAB5FEC81 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -59,22 +61,28 @@
 		423682EA19D9F6DF00DE84EC /* VenueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueCell.m; sourceTree = "<group>"; };
 		42DF05331BD88EDF00037D8B /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		42DF05341BD88EDF00037D8B /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
-		42DF053E1BD88EDF00037D8B /* WSConnectionAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSConnectionAFNetworking.h; sourceTree = "<group>"; };
-		42DF053F1BD88EDF00037D8B /* WSConnectionAFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSConnectionAFNetworking.m; sourceTree = "<group>"; };
-		42DF05401BD88EDF00037D8B /* WSAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSAFNetworking.h; sourceTree = "<group>"; };
-		42DF05411BD88EDF00037D8B /* WSAFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSAFNetworking.m; sourceTree = "<group>"; };
-		42DF05461BD89CC800037D8B /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
-		42DF05471BD89CC800037D8B /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
-		42DF05481BD89CC800037D8B /* Stats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stats.h; sourceTree = "<group>"; };
-		42DF05491BD89CC800037D8B /* Stats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stats.m; sourceTree = "<group>"; };
-		42DF054A1BD89CC800037D8B /* Venue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Venue.h; sourceTree = "<group>"; };
-		42DF054B1BD89CC800037D8B /* Venue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Venue.m; sourceTree = "<group>"; };
 		42DF05531BD89D6300037D8B /* DataOM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataOM.h; sourceTree = "<group>"; };
 		42DF05541BD89D6300037D8B /* DataOM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataOM.m; sourceTree = "<group>"; };
 		42DF05591BD89DBA00037D8B /* SourceOM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SourceOM.h; sourceTree = "<group>"; };
 		42DF055A1BD89DBA00037D8B /* SourceOM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SourceOM.m; sourceTree = "<group>"; };
 		42DF05641BD8A92100037D8B /* ImageOM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageOM.h; sourceTree = "<group>"; };
 		42DF05651BD8A92100037D8B /* ImageOM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageOM.m; sourceTree = "<group>"; };
+		42DF056B1BD99BAF00037D8B /* WS_AFNetworkingTopReddit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WS_AFNetworkingTopReddit.h; sourceTree = "<group>"; };
+		42DF056C1BD99BAF00037D8B /* WS_AFNetworkingTopReddit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WS_AFNetworkingTopReddit.m; sourceTree = "<group>"; };
+		42DF056F1BD99C4300037D8B /* WS_NSURLSessionTopReddit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WS_NSURLSessionTopReddit.h; sourceTree = "<group>"; };
+		42DF05701BD99C4300037D8B /* WS_NSURLSessionTopReddit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WS_NSURLSessionTopReddit.m; sourceTree = "<group>"; };
+		42DF05721BD99C5800037D8B /* WSTopReddit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSTopReddit.h; sourceTree = "<group>"; };
+		42DF05741BD99F8D00037D8B /* WS_AFNetworkingConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WS_AFNetworkingConnection.h; sourceTree = "<group>"; };
+		42DF05751BD99F8D00037D8B /* WS_AFNetworkingConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WS_AFNetworkingConnection.m; sourceTree = "<group>"; };
+		42DF05781BD9A06C00037D8B /* WS_NSURLSessionConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WS_NSURLSessionConnection.h; sourceTree = "<group>"; };
+		42DF05791BD9A06C00037D8B /* WS_NSURLSessionConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WS_NSURLSessionConnection.m; sourceTree = "<group>"; };
+		42DF057B1BD9A7A100037D8B /* WebServicesAbstracFactoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServicesAbstracFactoryProtocol.h; sourceTree = "<group>"; };
+		42DF057C1BD9A7A100037D8B /* WebServicesAbstractFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServicesAbstractFactory.h; sourceTree = "<group>"; };
+		42DF057D1BD9A7A100037D8B /* WebServicesAbstractFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServicesAbstractFactory.m; sourceTree = "<group>"; };
+		42DF05811BD9A94500037D8B /* WebServicesAFNetworkingFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServicesAFNetworkingFactory.h; sourceTree = "<group>"; };
+		42DF05821BD9A94500037D8B /* WebServicesAFNetworkingFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServicesAFNetworkingFactory.m; sourceTree = "<group>"; };
+		42DF05841BD9A95A00037D8B /* WebServicesNSURLSessionFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServicesNSURLSessionFactory.h; sourceTree = "<group>"; };
+		42DF05851BD9A95A00037D8B /* WebServicesNSURLSessionFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServicesNSURLSessionFactory.m; sourceTree = "<group>"; };
 		8F84449B9B23B2B816A3BD3B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A6FDE12E64C8480CAB5FEC81 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -207,6 +215,9 @@
 		42DF05381BD88EDF00037D8B /* Abstract */ = {
 			isa = PBXGroup;
 			children = (
+				42DF057B1BD9A7A100037D8B /* WebServicesAbstracFactoryProtocol.h */,
+				42DF057C1BD9A7A100037D8B /* WebServicesAbstractFactory.h */,
+				42DF057D1BD9A7A100037D8B /* WebServicesAbstractFactory.m */,
 			);
 			path = Abstract;
 			sourceTree = "<group>";
@@ -214,6 +225,8 @@
 		42DF05391BD88EDF00037D8B /* Concrete */ = {
 			isa = PBXGroup;
 			children = (
+				42DF057F1BD9A7A900037D8B /* AFNetworking */,
+				42DF05801BD9A7A900037D8B /* NSURLSession */,
 			);
 			path = Concrete;
 			sourceTree = "<group>";
@@ -230,6 +243,7 @@
 		42DF053B1BD88EDF00037D8B /* Abstract */ = {
 			isa = PBXGroup;
 			children = (
+				42DF05721BD99C5800037D8B /* WSTopReddit.h */,
 			);
 			path = Abstract;
 			sourceTree = "<group>";
@@ -237,31 +251,15 @@
 		42DF053C1BD88EDF00037D8B /* Concrete */ = {
 			isa = PBXGroup;
 			children = (
-				42DF053D1BD88EDF00037D8B /* Connection */,
-				42DF05401BD88EDF00037D8B /* WSAFNetworking.h */,
-				42DF05411BD88EDF00037D8B /* WSAFNetworking.m */,
+				42DF056D1BD99BAF00037D8B /* NSURLSession */,
+				42DF056A1BD99BAF00037D8B /* AFNetworking */,
 			);
 			path = Concrete;
-			sourceTree = "<group>";
-		};
-		42DF053D1BD88EDF00037D8B /* Connection */ = {
-			isa = PBXGroup;
-			children = (
-				42DF053E1BD88EDF00037D8B /* WSConnectionAFNetworking.h */,
-				42DF053F1BD88EDF00037D8B /* WSConnectionAFNetworking.m */,
-			);
-			path = Connection;
 			sourceTree = "<group>";
 		};
 		42DF05451BD89CC800037D8B /* ObjectMapping */ = {
 			isa = PBXGroup;
 			children = (
-				42DF05461BD89CC800037D8B /* Location.h */,
-				42DF05471BD89CC800037D8B /* Location.m */,
-				42DF05481BD89CC800037D8B /* Stats.h */,
-				42DF05491BD89CC800037D8B /* Stats.m */,
-				42DF054A1BD89CC800037D8B /* Venue.h */,
-				42DF054B1BD89CC800037D8B /* Venue.m */,
 				42DF05531BD89D6300037D8B /* DataOM.h */,
 				42DF05541BD89D6300037D8B /* DataOM.m */,
 				42DF05591BD89DBA00037D8B /* SourceOM.h */,
@@ -271,6 +269,64 @@
 			);
 			name = ObjectMapping;
 			path = CoffeeKit/ObjectMapping;
+			sourceTree = "<group>";
+		};
+		42DF056A1BD99BAF00037D8B /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				42DF05731BD99F8D00037D8B /* Connection */,
+				42DF056B1BD99BAF00037D8B /* WS_AFNetworkingTopReddit.h */,
+				42DF056C1BD99BAF00037D8B /* WS_AFNetworkingTopReddit.m */,
+			);
+			name = AFNetworking;
+			path = CoffeeKit/ws/Product/Concrete/AFNetworking;
+			sourceTree = SOURCE_ROOT;
+		};
+		42DF056D1BD99BAF00037D8B /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				42DF05771BD9A02800037D8B /* Connection */,
+				42DF056F1BD99C4300037D8B /* WS_NSURLSessionTopReddit.h */,
+				42DF05701BD99C4300037D8B /* WS_NSURLSessionTopReddit.m */,
+			);
+			name = NSURLSession;
+			path = CoffeeKit/ws/Product/Concrete/NSURLSession;
+			sourceTree = SOURCE_ROOT;
+		};
+		42DF05731BD99F8D00037D8B /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				42DF05741BD99F8D00037D8B /* WS_AFNetworkingConnection.h */,
+				42DF05751BD99F8D00037D8B /* WS_AFNetworkingConnection.m */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		42DF05771BD9A02800037D8B /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				42DF05781BD9A06C00037D8B /* WS_NSURLSessionConnection.h */,
+				42DF05791BD9A06C00037D8B /* WS_NSURLSessionConnection.m */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		42DF057F1BD9A7A900037D8B /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				42DF05811BD9A94500037D8B /* WebServicesAFNetworkingFactory.h */,
+				42DF05821BD9A94500037D8B /* WebServicesAFNetworkingFactory.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		42DF05801BD9A7A900037D8B /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				42DF05841BD9A95A00037D8B /* WebServicesNSURLSessionFactory.h */,
+				42DF05851BD9A95A00037D8B /* WebServicesNSURLSessionFactory.m */,
+			);
+			path = NSURLSession;
 			sourceTree = "<group>";
 		};
 		4B5E4F3135D6ED6637696E70 /* Pods */ = {
@@ -425,18 +481,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42DF054E1BD89CC800037D8B /* Venue.m in Sources */,
 				423682BF19D9B2AE00DE84EC /* AppDelegate.m in Sources */,
-				42DF05431BD88EDF00037D8B /* WSConnectionAFNetworking.m in Sources */,
+				42DF05761BD99F8D00037D8B /* WS_AFNetworkingConnection.m in Sources */,
+				42DF056E1BD99BAF00037D8B /* WS_AFNetworkingTopReddit.m in Sources */,
+				42DF05861BD9A95A00037D8B /* WebServicesNSURLSessionFactory.m in Sources */,
+				42DF057E1BD9A7A100037D8B /* WebServicesAbstractFactory.m in Sources */,
+				42DF05711BD99C4300037D8B /* WS_NSURLSessionTopReddit.m in Sources */,
 				423682C219D9B2AE00DE84EC /* MasterViewController.m in Sources */,
 				423682EB19D9F6DF00DE84EC /* VenueCell.m in Sources */,
-				42DF054C1BD89CC800037D8B /* Location.m in Sources */,
+				42DF057A1BD9A06C00037D8B /* WS_NSURLSessionConnection.m in Sources */,
 				42DF055B1BD89DBA00037D8B /* SourceOM.m in Sources */,
-				42DF054D1BD89CC800037D8B /* Stats.m in Sources */,
+				42DF05831BD9A94500037D8B /* WebServicesAFNetworkingFactory.m in Sources */,
 				42DF05421BD88EDF00037D8B /* TableViewController.m in Sources */,
 				423682BC19D9B2AE00DE84EC /* main.m in Sources */,
 				423682C519D9B2AE00DE84EC /* DetailViewController.m in Sources */,
-				42DF05441BD88EDF00037D8B /* WSAFNetworking.m in Sources */,
 				42DF05551BD89D6300037D8B /* DataOM.m in Sources */,
 				42DF05661BD8A92100037D8B /* ImageOM.m in Sources */,
 			);

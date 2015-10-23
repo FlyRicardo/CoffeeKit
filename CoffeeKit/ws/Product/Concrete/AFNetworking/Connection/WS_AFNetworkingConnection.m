@@ -6,20 +6,20 @@
 //  Copyright © 2015 ___FlyInc___. All rights reserved.
 //
 
-#import "WSConnectionAFNetworking.h"
+#import "WS_AFNetworkingConnection.h"
 
-@implementation WSConnectionAFNetworking{
+@implementation WS_AFNetworkingConnection{
     NSString* baseUrl;
     AFHTTPClient* client;
 }
 
 #pragma mark - Singleton Pattern implementation
 
-static WSConnectionAFNetworking* _instance;
+static WS_AFNetworkingConnection* _instance;
 
 +(void)initialize{
-    if(self == [WSConnectionAFNetworking class]){
-        _instance = [[WSConnectionAFNetworking alloc]init];
+    if(self == [WS_AFNetworkingConnection class]){
+        _instance = [[WS_AFNetworkingConnection alloc]init];
     }
 }
 

@@ -6,9 +6,9 @@
 //  Copyright © 2015 ___FlyInc___. All rights reserved.
 //
 
-#import "WSAFNetworking.h"
+#import "WS_AFNetworkingTopReddit.h"
 
-#import "WSConnectionAFNetworking.h"
+#import "WS_AFNetworkingConnection.h"
 #import <RestKit/RestKit.h>
 
 #import "DataOM.h"
@@ -16,25 +16,23 @@
 #import "SourceOM.h"
 
 
-@interface WSAFNetworking()
-
-@property (nonatomic, strong) WSAFNetworking *wsAFNetworking;
+@interface WS_AFNetworkingTopReddit()
 
 @property (nonatomic, strong) RKResponseDescriptor *responseDescriptor;
-@property (nonatomic, strong) WSConnectionAFNetworking *wsConnectionAFNetworking;
+@property (nonatomic, strong) WS_AFNetworkingConnection *wsConnectionAFNetworking;
 
 @end
 
 
-@implementation WSAFNetworking
+@implementation WS_AFNetworkingTopReddit
 
 #pragma mark - Singleton Pattern implementation
 
-static WSAFNetworking* _instance;
+static WS_AFNetworkingTopReddit* _instance;
 
 +(void)initialize{
-    if(self == [WSAFNetworking class]){
-        _instance = [[WSAFNetworking alloc]init];
+    if(self == [WS_AFNetworkingTopReddit class]){
+        _instance = [[WS_AFNetworkingTopReddit alloc]init];
     }
 }
 
@@ -45,7 +43,7 @@ static WSAFNetworking* _instance;
         //Initialite own parammeters
         
         //Object manager configuration
-        _wsConnectionAFNetworking = [WSConnectionAFNetworking getInstance];
+        _wsConnectionAFNetworking = [WS_AFNetworkingConnection getInstance];
         
     }
     return self;

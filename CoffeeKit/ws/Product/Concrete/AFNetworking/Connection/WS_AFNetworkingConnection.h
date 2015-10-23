@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <RestKit/RestKit.h>
 
-@interface WSConnectionAFNetworking : NSObject
+@interface WS_AFNetworkingConnection : NSObject
 
 @property (nonatomic, strong) RKObjectManager *objectManager;
 
