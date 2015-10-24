@@ -7,8 +7,11 @@
 //
 
 #import "AppDelegate.h"
-#import "DetailViewController.h"
 #import <RestKit/RestKit.h>
+#import "ASFSharedViewTransition.h"
+#import "TableViewController.h"
+#import "DetailViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -19,6 +22,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // Add Transition
+    [ASFSharedViewTransition addTransitionWithFromViewControllerClass:[TableViewController class]
+                                                ToViewControllerClass:[DetailViewController class]
+                                             WithNavigationController:(UINavigationController *)self.window.rootViewController
+                                                         WithDuration:0.3f];
+    
     return YES;
 }
 

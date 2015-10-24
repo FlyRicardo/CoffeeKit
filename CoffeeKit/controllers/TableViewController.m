@@ -14,7 +14,11 @@
 
 #import "Constants.h"
 
-@interface TableViewController ()
+#import "ASFSharedViewTransition.h"
+#import "DetailViewController.h"
+#import "ImageOM.h"
+
+@interface TableViewController () <ASFSharedViewTransitionDataSource>
 
 @property(nonatomic) NSArray* linkArray;
 
@@ -108,6 +112,35 @@
         //Launch pop up notifying user about error
     }
 
+}
+
+#pragma mark - Navigation rules
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.destinationViewController isKindOfClass:[DetailViewController class]]) {
+        // Get the selected item index path
+        NSIndexPath *selectedIndexPath = [[self tableView]indexPathForSelectedRow];
+        
+        // Set the thing on the view controller we're about to show
+        if (selectedIndexPath != nil) {
+            DetailViewController *detailVC = segue.destinationViewController;
+            DataOM* data = _linkArray[selectedIndexPath.row];
+            
+            ImageOM *imageOM = [[data imageArray]objectAtIndex:0];
+            detailVC.source = [imageOM sourceOM];
+        }
+    }
+}
+
+
+
+#pragma mark - ASFSharedViewTransitionDataSource
+
+- (UIView *)sharedView
+{
+    LinkCell *linkCell =  (LinkCell*)[self tableView:[self tableView] cellForRowAtIndexPath:[[self tableView]indexPathForSelectedRow]];
+    
+    return [linkCell imageView];
 }
 
 

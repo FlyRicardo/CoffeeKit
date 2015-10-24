@@ -9,12 +9,11 @@
 /* Begin PBXBuildFile section */
 		423682BC19D9B2AE00DE84EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 423682BB19D9B2AE00DE84EC /* main.m */; };
 		423682BF19D9B2AE00DE84EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 423682BE19D9B2AE00DE84EC /* AppDelegate.m */; };
-		423682C219D9B2AE00DE84EC /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 423682C119D9B2AE00DE84EC /* MasterViewController.m */; };
 		423682C819D9B2AE00DE84EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 423682C619D9B2AE00DE84EC /* Main.storyboard */; };
 		423682CA19D9B2AE00DE84EC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 423682C919D9B2AE00DE84EC /* Images.xcassets */; };
 		423682CD19D9B2AE00DE84EC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 423682CB19D9B2AE00DE84EC /* LaunchScreen.xib */; };
 		423682D919D9B2AE00DE84EC /* CoffeeKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 423682D819D9B2AE00DE84EC /* CoffeeKitTests.m */; };
-		423682EB19D9F6DF00DE84EC /* VenueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 423682EA19D9F6DF00DE84EC /* VenueCell.m */; };
+		42BFBEE21BDAE75500407326 /* ASFSharedViewTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BFBEE11BDAE75500407326 /* ASFSharedViewTransition.m */; settings = {ASSET_TAGS = (); }; };
 		42DF05421BD88EDF00037D8B /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DF05341BD88EDF00037D8B /* TableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		42DF05551BD89D6300037D8B /* DataOM.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DF05541BD89D6300037D8B /* DataOM.m */; settings = {ASSET_TAGS = (); }; };
 		42DF055B1BD89DBA00037D8B /* SourceOM.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DF055A1BD89DBA00037D8B /* SourceOM.m */; settings = {ASSET_TAGS = (); }; };
@@ -50,16 +49,14 @@
 		423682BB19D9B2AE00DE84EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		423682BD19D9B2AE00DE84EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		423682BE19D9B2AE00DE84EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		423682C019D9B2AE00DE84EC /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		423682C119D9B2AE00DE84EC /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		423682C719D9B2AE00DE84EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		423682C919D9B2AE00DE84EC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		423682CC19D9B2AE00DE84EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		423682D219D9B2AE00DE84EC /* CoffeeKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeeKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		423682D719D9B2AE00DE84EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		423682D819D9B2AE00DE84EC /* CoffeeKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoffeeKitTests.m; sourceTree = "<group>"; };
-		423682E919D9F6DF00DE84EC /* VenueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueCell.h; sourceTree = "<group>"; };
-		423682EA19D9F6DF00DE84EC /* VenueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueCell.m; sourceTree = "<group>"; };
+		42BFBEE01BDAE75500407326 /* ASFSharedViewTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASFSharedViewTransition.h; sourceTree = "<group>"; };
+		42BFBEE11BDAE75500407326 /* ASFSharedViewTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASFSharedViewTransition.m; sourceTree = "<group>"; };
 		42DF05331BD88EDF00037D8B /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		42DF05341BD88EDF00037D8B /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		42DF05531BD89D6300037D8B /* DataOM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataOM.h; sourceTree = "<group>"; };
@@ -144,11 +141,7 @@
 			children = (
 				423682BD19D9B2AE00DE84EC /* AppDelegate.h */,
 				423682BE19D9B2AE00DE84EC /* AppDelegate.m */,
-				423682C019D9B2AE00DE84EC /* MasterViewController.h */,
-				423682C119D9B2AE00DE84EC /* MasterViewController.m */,
 				423682C619D9B2AE00DE84EC /* Main.storyboard */,
-				423682E919D9F6DF00DE84EC /* VenueCell.h */,
-				423682EA19D9F6DF00DE84EC /* VenueCell.m */,
 				423682C919D9B2AE00DE84EC /* Images.xcassets */,
 				423682CB19D9B2AE00DE84EC /* LaunchScreen.xib */,
 				423682B919D9B2AE00DE84EC /* Supporting Files */,
@@ -198,6 +191,8 @@
 		42DF05351BD88EDF00037D8B /* utilities */ = {
 			isa = PBXGroup;
 			children = (
+				42BFBEE01BDAE75500407326 /* ASFSharedViewTransition.h */,
+				42BFBEE11BDAE75500407326 /* ASFSharedViewTransition.m */,
 				42DF05911BD9FC1A00037D8B /* CacheManager.h */,
 				42DF05921BD9FC1A00037D8B /* CacheManager.m */,
 				42DF05871BD9E59D00037D8B /* Constants.h */,
@@ -511,10 +506,9 @@
 				42DF057E1BD9A7A100037D8B /* WebServicesAbstractFactory.m in Sources */,
 				42DF058D1BD9F51500037D8B /* LinkCell.m in Sources */,
 				42DF05711BD99C4300037D8B /* WS_NSURLSessionTopReddit.m in Sources */,
-				423682C219D9B2AE00DE84EC /* MasterViewController.m in Sources */,
-				423682EB19D9F6DF00DE84EC /* VenueCell.m in Sources */,
 				42DF05891BD9E59D00037D8B /* Constants.m in Sources */,
 				42DF057A1BD9A06C00037D8B /* WS_NSURLSessionConnection.m in Sources */,
+				42BFBEE21BDAE75500407326 /* ASFSharedViewTransition.m in Sources */,
 				42DF05901BD9F53C00037D8B /* DetailViewController.m in Sources */,
 				42DF055B1BD89DBA00037D8B /* SourceOM.m in Sources */,
 				42DF05831BD9A94500037D8B /* WebServicesAFNetworkingFactory.m in Sources */,

@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SourceOM.h"
 
 @interface DetailViewController : UIViewController
 
-@property (strong, nonatomic) id detailItem;
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
+@property (nonatomic)SourceOM* source;
 
 @end
 
