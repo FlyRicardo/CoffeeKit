@@ -24,6 +24,8 @@
 
 @property id wsTopReddit;
 
+@property (nonatomic) NSMutableDictionary *cellHeightList;
+
 @end
 
 @implementation TableViewController
@@ -35,6 +37,12 @@
     
     _wsTopReddit = [WebServicesAbstractFactory createWebServiceTopReddit:AFNetworkingType];
     [_wsTopReddit getTopListWithLimit:50];
+    
+    _cellHeightList = [[NSMutableDictionary alloc]init];
+    
+//    self.tableView.estimatedRowHeight = REDDIT_K_NORMAL_CELL_HEIGHT; // for example. Set your average height
+//    self.tableView.rowHeight = UITableViewAutomaticDimension;
+//    [self.tableView reloadData];
     
     // Uncomment the following line to preserve selection between presentations.
      self.clearsSelectionOnViewWillAppear = NO;
@@ -80,9 +88,30 @@
     }
     
     [cell setLink:[_linkArray objectAtIndex:[indexPath row]] index:(int)[indexPath row]];
-
     
+    
+    NSString* indexPathString = [self indexPathToStringKey:indexPath];          // Convert NSIndexPath to single String,
+                                                                                // making faster looking the key on data structure
+    
+    [self calculateHeightRow:cell indexPathString:indexPathString];             // Save cell height that are greater than,
+                                                                                // REDDIT_K_NORMAL_CELL_HEIGHT
+
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    NSString* indexPathString = [self indexPathToStringKey:indexPath];
+    
+    if([_cellHeightList valueForKey:indexPathString]){                          // If the selected row (indexPath),
+                                                                                // in the _cellHeihtList array,
+                                                                                // then return that value
+        return [[_cellHeightList valueForKey:indexPathString] floatValue];
+    }
+    
+    return REDDIT_K_NORMAL_CELL_HEIGHT;
+
 }
 
 
@@ -113,6 +142,41 @@
     }
 
 }
+
+#pragma mark - utilities of class
+
+// Use this method to convert an NSIndexPath, to String Object key.
+
+-(NSString*) indexPathToStringKey:(NSIndexPath *)indexPath{
+    int indexPathInt = (int)[indexPath row];
+    return [NSString stringWithFormat:@"%i",indexPathInt];
+}
+
+// Use this method to calculate the height of specific row, adding the dj label height to wrapper row that gonna wrap this label
+
+-(void) calculateHeightRow:(LinkCell*) cell indexPathString:(NSString*)indexPath{
+    
+    CGRect titleFrame = [[cell linkTitleLable] bounds];
+    float titleHegiht = titleFrame.size.height;
+    float titleWidth = titleFrame.size.width;
+    
+    CGRect howLongFrame = [[cell howLongCreatedLinkLabel] bounds];;
+    float howLongHeight = howLongFrame.size.height;
+    
+    CGRect numComentsFrame = [[cell numberOfCommentsLinkLabel] bounds];;
+    float numComentsHeight = numComentsFrame.size.height;
+    
+    float currentCellHeight = 3. + titleHegiht + 3. + howLongHeight + 3. + numComentsHeight + 3.;
+    
+    if(currentCellHeight > REDDIT_K_NORMAL_CELL_HEIGHT){
+        
+        NSNumber* cellHeight = [NSNumber numberWithFloat:currentCellHeight];
+        [_cellHeightList setValue:cellHeight forKey:indexPath];
+        
+    }
+    
+}
+
 
 #pragma mark - Navigation rules
 

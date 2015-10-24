@@ -13,5 +13,13 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "-[LinkCell getHowLongCreated:]:LinkCell.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "labs(endDay-startDay)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>

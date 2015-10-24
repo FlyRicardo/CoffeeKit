@@ -71,7 +71,7 @@ static WS_AFNetworkingTopReddit* _instance;
     [dataMapping addAttributeMappingsFromDictionary:@{
                                                       @"name":@"name",
                                                       @"num_comments": @"numberOfComments",
-                                                      @"created":@"created",
+                                                      @"created_utc":@"created",
                                                       @"thumbnail":@"thumbnailUrl",
                                                       @"title":@"title",
                                                       @"author":@"author"

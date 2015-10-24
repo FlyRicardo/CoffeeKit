@@ -44,6 +44,18 @@
     
     [[self linkTitleLable]setText:[data title]];
     
+    // How long created link
+    
+    [[self howLongCreatedLinkLabel] setText:[self getHowLongCreated:[data created]]];
+    
+    // Author
+    
+    [[self authorLinkLabel]setText:[data author]];
+    
+    //Number of comments
+    
+    [[self numberOfCommentsLinkLabel] setText:[NSString stringWithFormat:@"%i %@",[[data numberOfComments] intValue], @"Comments"]];
+    
 }
 
 // Use this method to keep on cache the most recurrent images
@@ -66,7 +78,22 @@
         });
     }
 }
+     
+     
+     
+#pragma mark - Method utilities
 
+- (NSString*) getHowLongCreated:(NSDate*) created{
+    
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSInteger startDay=[calendar ordinalityOfUnit:NSCalendarUnitHour
+                                           inUnit:NSCalendarUnitEra
+                                          forDate:created];
+    NSInteger endDay=[calendar ordinalityOfUnit:NSCalendarUnitHour
+                                         inUnit:NSCalendarUnitEra
+                                        forDate:[NSDate date]];
 
+    return [NSString stringWithFormat:@"%@ %li %@", @"Sent", labs(endDay-startDay), @"hours by"];
+}
 
 @end
