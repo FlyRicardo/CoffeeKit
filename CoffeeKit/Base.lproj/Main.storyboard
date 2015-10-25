@@ -229,6 +229,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="defaultImage" width="640" height="480"/>
+        <image name="defaultImage" width="318" height="159"/>
     </resources>
 </document>

@@ -68,19 +68,33 @@
         [_linkImage setImage:cached_image];
     }else{
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-            NSURL * imageURL = [NSURL URLWithString:[data thumbnailUrl]];
-            NSData * imageData = [NSData dataWithContentsOfURL:imageURL];
-            UIImage * image = [UIImage imageWithData:imageData];
+            
+            UIImage * image;
+            
+            if(![[data thumbnailUrl] isEqualToString:@""]){
+                
+                NSURL * imageURL = [NSURL URLWithString:[data thumbnailUrl]];
+                NSData * imageData = [NSData dataWithContentsOfURL:imageURL];
+                image = [UIImage imageWithData:imageData];
+                
+            }else{
+                
+                image = [UIImage imageNamed:@"defaultImage"];
+                
+            }
+            
             dispatch_sync(dispatch_get_main_queue(), ^{
                 [_linkImage setImage: image];
                 [[CacheManager sharedCacheController] setCachedImage:image name:[NSString stringWithFormat:@"image-%@", [data name]]];
             });
+            
         });
     }
+    
 }
-     
-     
-     
+
+
+
 #pragma mark - Method utilities
 
 - (NSString*) getHowLongCreated:(NSDate*) created{
