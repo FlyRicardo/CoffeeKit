@@ -155,7 +155,7 @@
                                     <outlet property="linkImage" destination="KeE-b2-i7y" id="FiN-lV-U7l"/>
                                     <outlet property="linkTitleLable" destination="GNG-0Y-2Bh" id="0ep-bf-T1N"/>
                                     <outlet property="numberOfCommentsLinkLabel" destination="u0O-Yc-Bhl" id="y2p-jX-CFG"/>
-                                    <segue destination="Ah7-4n-0Wa" kind="push" identifier="" id="jUr-3t-vfg"/>
+                                    <segue destination="Ah7-4n-0Wa" kind="show" identifier="" id="jUr-3t-vfg"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
