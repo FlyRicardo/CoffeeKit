@@ -6,6 +6,7 @@
 //  Copyright © 2015 ___FlyInc___. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
 @interface TableViewController : UITableViewController

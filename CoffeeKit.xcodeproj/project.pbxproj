@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4205E2C51BDC532A00275E81 /* NSString+WithHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 4205E2C41BDC532A00275E81 /* NSString+WithHeight.m */; settings = {ASSET_TAGS = (); }; };
 		422B32491BDBE2AE00E8FFD8 /* ImageUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 422B32481BDBE2AE00E8FFD8 /* ImageUtilities.m */; settings = {ASSET_TAGS = (); }; };
 		423682BC19D9B2AE00DE84EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 423682BB19D9B2AE00DE84EC /* main.m */; };
 		423682BF19D9B2AE00DE84EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 423682BE19D9B2AE00DE84EC /* AppDelegate.m */; };
@@ -45,6 +46,8 @@
 
 /* Begin PBXFileReference section */
 		15183D62018B5E4CF1B9A1D4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		4205E2C31BDC532A00275E81 /* NSString+WithHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WithHeight.h"; sourceTree = "<group>"; };
+		4205E2C41BDC532A00275E81 /* NSString+WithHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WithHeight.m"; sourceTree = "<group>"; };
 		422B32471BDBE2AE00E8FFD8 /* ImageUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUtilities.h; sourceTree = "<group>"; };
 		422B32481BDBE2AE00E8FFD8 /* ImageUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUtilities.m; sourceTree = "<group>"; };
 		423682B619D9B2AE00DE84EC /* CoffeeKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,6 +205,8 @@
 				42DF05881BD9E59D00037D8B /* Constants.m */,
 				422B32471BDBE2AE00E8FFD8 /* ImageUtilities.h */,
 				422B32481BDBE2AE00E8FFD8 /* ImageUtilities.m */,
+				4205E2C31BDC532A00275E81 /* NSString+WithHeight.h */,
+				4205E2C41BDC532A00275E81 /* NSString+WithHeight.m */,
 			);
 			name = utilities;
 			path = CoffeeKit/utilities;
@@ -508,6 +513,7 @@
 				42DF05761BD99F8D00037D8B /* WS_AFNetworkingConnection.m in Sources */,
 				42DF056E1BD99BAF00037D8B /* WS_AFNetworkingTopReddit.m in Sources */,
 				42DF05861BD9A95A00037D8B /* WebServicesNSURLSessionFactory.m in Sources */,
+				4205E2C51BDC532A00275E81 /* NSString+WithHeight.m in Sources */,
 				42DF057E1BD9A7A100037D8B /* WebServicesAbstractFactory.m in Sources */,
 				42DF058D1BD9F51500037D8B /* LinkCell.m in Sources */,
 				42DF05711BD99C4300037D8B /* WS_NSURLSessionTopReddit.m in Sources */,
