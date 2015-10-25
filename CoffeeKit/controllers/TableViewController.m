@@ -35,6 +35,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.tableView.autoresizesSubviews = YES;
     
     //Put a waitter sppiner
     
@@ -85,6 +86,7 @@
     NSString *identifier = @"LinkCell";
     
     LinkCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+//    [cell layoutIfNeeded];
     
     if (cell == nil) {
         cell = [[LinkCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
@@ -98,7 +100,7 @@
     
     [self calculateHeightRow:cell indexPathString:indexPathString];             // Save cell height that are greater than,
                                                                                 // REDDIT_K_NORMAL_CELL_HEIGHT
-
+    
     return cell;
 }
 
@@ -164,15 +166,16 @@
     NSString* text = [[cell linkTitleLable]text];
     
     CGRect titleFrame = [[cell linkTitleLable] bounds];
+    float titleWidth = titleFrame.size.width;
     float titleHegiht = [text heigthWithWidth:titleFrame.size.width andFont:[UIFont systemFontOfSize:15.0]];
-
+    
     CGRect howLongFrame = [[cell howLongCreatedLinkLabel] bounds];;
     float howLongHeight = howLongFrame.size.height;
     
     CGRect numComentsFrame = [[cell numberOfCommentsLinkLabel] bounds];;
     float numComentsHeight = numComentsFrame.size.height;
     
-    float currentCellHeight = 5. + titleHegiht + 5. + howLongHeight + 5. + numComentsHeight + 5.;
+    float currentCellHeight = 5. + titleHegiht + 7. + howLongHeight + 7. + numComentsHeight + 7.;
     
     if(currentCellHeight > REDDIT_K_NORMAL_CELL_HEIGHT){
         
@@ -184,22 +187,16 @@
             NSLog(@"----------------------------------");
             NSLog(@"");
             NSLog(@"%@",[NSString stringWithFormat:@"Height of title: %f ",titleHegiht]);
+            NSLog(@"%@",[NSString stringWithFormat:@"Width of title: %f ",titleWidth]);
             NSLog(@"%@",[NSString stringWithFormat:@"Height of howLongFrame: %f ",howLongHeight]);
             NSLog(@"%@",[NSString stringWithFormat:@"Height of numComentsFrame: %f ",numComentsHeight]);
-            NSLog(@"%@",[NSString stringWithFormat:@"Value of variable height %f",currentCellHeight]);
+            NSLog(@"%@",[NSString stringWithFormat:@"Value of variable currentCellHeight %f",currentCellHeight]);
             NSLog(@"Cell 1 heigth on special array: %f",[[_cellHeightList valueForKey:@"1"] floatValue]);
             NSLog(@"%@",[NSString stringWithFormat:@"Text of label title: %@", [[cell linkTitleLable] text]]);
             NSLog(@"");
             NSLog(@"----------------------------------");
         }
-
-        
     }
-    
-   
-    
-    
-    
 }
 
 

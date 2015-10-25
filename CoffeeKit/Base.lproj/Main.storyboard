@@ -43,20 +43,20 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="33i-di-91U" userLabel="Container Sent By Container">
-                                                            <rect key="frame" x="8" y="23" width="483" height="15"/>
+                                                            <rect key="frame" x="8" y="26" width="483" height="15"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="Sent XX hours by  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6g-Bx-qGq">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="105" height="14.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="97.5" height="14.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="14.5" id="Xog-CR-Tc5"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Jhon Lock" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBv-BY-Py0" userLabel="Author">
-                                                                    <rect key="frame" x="107" y="0.0" width="59" height="14.5"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <rect key="frame" x="99" y="0.0" width="66.5" height="14.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                                     <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -79,12 +79,12 @@
                                                                 </mask>
                                                             </variation>
                                                         </view>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" text="1000 Comments " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0O-Yc-Bhl" userLabel="# Comments">
-                                                            <rect key="frame" x="8" y="38" width="483" height="14.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="1000" text="1000 Comments " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0O-Yc-Bhl" userLabel="# Comments">
+                                                            <rect key="frame" x="8" y="42" width="483" height="13.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="14.5" id="N8W-mt-jyF"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                             <variation key="default">
@@ -103,11 +103,11 @@
                                                         <constraint firstAttribute="trailing" secondItem="u0O-Yc-Bhl" secondAttribute="trailing" constant="3" id="O8U-ta-vi8"/>
                                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="u0O-Yc-Bhl" secondAttribute="trailing" id="P3U-0j-tNZ"/>
                                                         <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="u0O-Yc-Bhl" secondAttribute="bottom" constant="28" id="PYM-Wr-SWt"/>
-                                                        <constraint firstItem="u0O-Yc-Bhl" firstAttribute="top" secondItem="33i-di-91U" secondAttribute="bottom" id="VV0-Rh-oL4"/>
+                                                        <constraint firstItem="u0O-Yc-Bhl" firstAttribute="top" secondItem="33i-di-91U" secondAttribute="bottom" constant="1" id="VV0-Rh-oL4"/>
                                                         <constraint firstItem="33i-di-91U" firstAttribute="leading" secondItem="idE-c5-NN6" secondAttribute="leading" constant="8" id="VVX-7e-EnX"/>
                                                         <constraint firstItem="GNG-0Y-2Bh" firstAttribute="leading" secondItem="idE-c5-NN6" secondAttribute="leading" constant="8" id="bdm-6h-TzZ"/>
                                                         <constraint firstAttribute="trailing" secondItem="GNG-0Y-2Bh" secondAttribute="trailing" constant="3" id="dMx-tx-h7J"/>
-                                                        <constraint firstItem="33i-di-91U" firstAttribute="top" secondItem="GNG-0Y-2Bh" secondAttribute="bottom" id="hsz-33-kzu"/>
+                                                        <constraint firstItem="33i-di-91U" firstAttribute="top" secondItem="GNG-0Y-2Bh" secondAttribute="bottom" constant="3" id="hsz-33-kzu"/>
                                                         <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="u0O-Yc-Bhl" secondAttribute="bottom" constant="38" id="mWm-9U-te2"/>
                                                         <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="u0O-Yc-Bhl" secondAttribute="trailing" constant="383" id="nHu-EV-hOj"/>
                                                         <constraint firstAttribute="trailing" secondItem="33i-di-91U" secondAttribute="trailing" constant="3" id="vvO-pg-08n"/>
