@@ -150,6 +150,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="authorLinkLabel" destination="JBv-BY-Py0" id="8zx-AR-BIf"/>
+                                    <outlet property="containerDetailView" destination="idE-c5-NN6" id="bJr-TC-zHE"/>
                                     <outlet property="howLongCreatedLinkLabel" destination="H6g-Bx-qGq" id="jwe-k9-KQL"/>
                                     <outlet property="linkImage" destination="KeE-b2-i7y" id="FiN-lV-U7l"/>
                                     <outlet property="linkTitleLable" destination="GNG-0Y-2Bh" id="0ep-bf-T1N"/>
@@ -229,6 +230,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="defaultImage" width="318" height="159"/>
+        <image name="defaultImage" width="159" height="159"/>
     </resources>
 </document>

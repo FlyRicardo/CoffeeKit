@@ -432,7 +432,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 423682B119D9B2AE00DE84EC /* Build configuration list for PBXProject "CoffeeKit" */;
+			buildConfigurationList = 423682B119D9B2AE00DE84EC /* Build configuration list for PBXProject "RedditTop50" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -707,7 +707,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		423682B119D9B2AE00DE84EC /* Build configuration list for PBXProject "CoffeeKit" */ = {
+		423682B119D9B2AE00DE84EC /* Build configuration list for PBXProject "RedditTop50" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				423682DA19D9B2AE00DE84EC /* Debug */,

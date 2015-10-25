@@ -86,6 +86,8 @@
     NSString *identifier = @"LinkCell";
     
     LinkCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+    [self setEdgesForView: [cell linkImage]];
+    [self setEdgesForView: [cell containerDetailView]];
 //    [cell layoutIfNeeded];
     
     if (cell == nil) {
@@ -160,8 +162,7 @@
 // Use this method to calculate the height of specific row, adding the dj label height to wrapper row that gonna wrap this label
 
 -(void) calculateHeightRow:(LinkCell*) cell indexPathString:(NSString*)indexPath{
-    
-//    (CGFloat)heigthWithWidth:(CGFloat)width andFont:(UIFont *)font
+
 
     NSString* text = [[cell linkTitleLable]text];
     
@@ -197,6 +198,13 @@
             NSLog(@"----------------------------------");
         }
     }
+}
+
+-(void) setEdgesForView:(UIView*) contentView{
+    
+    [contentView.layer setCornerRadius:5.0f];
+    [contentView.layer setMasksToBounds:YES];
+    
 }
 
 

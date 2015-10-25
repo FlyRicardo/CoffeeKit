@@ -17,7 +17,7 @@
                BlueprintIdentifier = "423682B519D9B2AE00DE84EC"
                BuildableName = "CoffeeKit.app"
                BlueprintName = "CoffeeKit"
-               ReferencedContainer = "container:CoffeeKit.xcodeproj">
+               ReferencedContainer = "container:RedditTop50.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,16 +31,16 @@
                BlueprintIdentifier = "423682D119D9B2AE00DE84EC"
                BuildableName = "CoffeeKitTests.xctest"
                BlueprintName = "CoffeeKitTests"
-               ReferencedContainer = "container:CoffeeKit.xcodeproj">
+               ReferencedContainer = "container:RedditTop50.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      buildConfiguration = "Debug">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -49,7 +49,7 @@
                BlueprintIdentifier = "423682D119D9B2AE00DE84EC"
                BuildableName = "CoffeeKitTests.xctest"
                BlueprintName = "CoffeeKitTests"
-               ReferencedContainer = "container:CoffeeKit.xcodeproj">
+               ReferencedContainer = "container:RedditTop50.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -59,44 +59,49 @@
             BlueprintIdentifier = "423682B519D9B2AE00DE84EC"
             BuildableName = "CoffeeKit.app"
             BlueprintName = "CoffeeKit"
-            ReferencedContainer = "container:CoffeeKit.xcodeproj">
+            ReferencedContainer = "container:RedditTop50.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
    </TestAction>
    <LaunchAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "423682B519D9B2AE00DE84EC"
             BuildableName = "CoffeeKit.app"
             BlueprintName = "CoffeeKit"
-            ReferencedContainer = "container:CoffeeKit.xcodeproj">
+            ReferencedContainer = "container:RedditTop50.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
+      buildConfiguration = "Release"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "423682B519D9B2AE00DE84EC"
             BuildableName = "CoffeeKit.app"
             BlueprintName = "CoffeeKit"
-            ReferencedContainer = "container:CoffeeKit.xcodeproj">
+            ReferencedContainer = "container:RedditTop50.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

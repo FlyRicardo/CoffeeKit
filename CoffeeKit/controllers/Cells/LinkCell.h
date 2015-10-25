@@ -17,6 +17,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *howLongCreatedLinkLabel;
 @property (weak, nonatomic) IBOutlet UILabel *authorLinkLabel;
 @property (weak, nonatomic) IBOutlet UILabel *numberOfCommentsLinkLabel;
+@property (weak, nonatomic) IBOutlet UIView *containerDetailView;
+
 
 -(void) setLink:(DataOM*)data index:(int)index;
 
